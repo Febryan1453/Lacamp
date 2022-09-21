@@ -2,66 +2,202 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --main-color: #7839F3;
+    --ijo-color: #31B380;
+    --hitam-color: #211B3D;
+}
+
 // Navbar
 .navbar-laracamp{
+
     nav{
-        height: 100px;
 
-        .navbar-brand{
-            margin-right: 51px;
-        }
+        .container-navbar{
 
-        .collapse{
-
-            ul{
-                .nav-item{
-                    margin-right: 30px;
-                    
-                    .nav-link{
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #211B3D;
-                    }
-
-                    .active{
-                        color: #7839F3;
-                    }
-
-                }
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+            .navbar-brand{
+                margin-right: 51px;
             }
 
-            .d-flex{
+            .collapse{
 
-                .btn-sign-in{
-                    background-color: #F5EFFF;
-                    border-color: #ECE3FE;
-                    color: #7839F3;
-                    border-radius: 50px;
-                    padding-top: 7px;
-                    padding-bottom: 7px;
-                    padding-left: 25px;
-                    padding-right: 25px;
-                    font-weight: 500;
-                    font-size: 16px;
+                ul{
+                    .nav-item{
+                        margin-right: 30px;
+                        
+                        .nav-link{
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #211B3D;
+                        }:hover{
+                            color: var(--main-color);
+                        }
+
+                        .active{
+                            color: var(--main-color);
+                        }
+
+                    }
                 }
 
-                .btn-success{
-                    background-color: #7839F3;
-                    border-radius: 50px;
-                    padding-top: 7px;
-                    padding-bottom: 7px;
-                    padding-left: 25px;
-                    padding-right: 25px;
-                    margin-left: 20px;
-                    font-weight: 500;
-                    font-size: 16px;
-                    border-color: #7839F3;
+                .d-flex{
+
+                    .btn-sign-in{
+                        background-color: #F5EFFF;
+                        border-color: #ECE3FE;
+                        color: var(--main-color);
+                        border-radius: 50px;
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+
+                    .btn-success{
+                        background-color: var(--main-color);
+                        border-radius: 50px;
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        margin-left: 20px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        border-color: var(--main-color);
+                    }
+                    
                 }
-                
+
+                .welcome-user{
+                    span{
+                        margin-right: 10px;
+                    }
+                    .img-user{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+
             }
 
         }
 
     }
+
 }
 // End Navbar
+
+
+// Hero-section
+.hero-section{
+    margin-top: 80px;
+    .row{
+
+        .content-hero{
+
+            span{
+                font-weight: 600;
+                font-size: 16px;
+                color: #31B380;
+            }
+
+            .hero-title{
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: 42px;
+                font-weight: 600;
+                span{
+                    color: var(--main-color);
+                    font-size: 42px;
+                    font-weight: 600;
+                }
+            }
+
+            .desc{
+                font-weight: 400;
+                font-size: 16px;
+                color: #5B5575;
+                margin-bottom: 30px;
+            }
+
+            .btn-get-started{
+                background-color: var(--main-color);
+                color: white;
+                border-radius: 50px;
+                border-color: var(--main-color);
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 912px) {
+            .hero-image{
+                margin-top: 30px;
+            }
+        }
+
+    }
+}
+// End Hero-section
+
+
+// Support
+.support{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+// End Support
+
+
+// Benefits
+.benefits{
+
+    margin-bottom: 100px;
+
+    .title-benefits{
+        span{
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--ijo-color);
+        }
+        .sub-title{
+            font-weight: 600;
+            font-size: 30px;
+            margin-top: 8px;
+        }
+    }
+
+    .varian-benefits{
+        margin-top: 70px;
+
+        .row{
+            .varian{
+                img{
+                    margin-bottom: 20px;
+                }
+                span{
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: var(--hitam-color);
+                }
+                .varian-content{
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #5B5575;
+                }
+            }
+
+            @media (max-width: 912px) {
+                .varian{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+// End Benefits
