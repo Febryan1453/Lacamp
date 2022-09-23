@@ -11,6 +11,7 @@
     --regular-fw: 400;
     --medium-fw: 500;
     --bg-color-secondary: #F5EFFF;
+    --bg-color-footer: #F7F7FB;
     --border-color: #ECE3FE;
 }
 
@@ -283,9 +284,10 @@
     background-color: #4D1DAB;
     padding-bottom: 70px;
     padding-top: 70px;
-
+    height: 540px;
     .container{
         .row{
+            
             .invest-content{
                 .desc-content{
 
@@ -322,7 +324,138 @@
 
                 }
             }
+
+            .kartu{
+                display: flex;
+                justify-content: center;
+                height: fit-content;
+                .card{                    
+                    border-radius: 40px;
+                    // position: absolute;
+                    .card-body{
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        span{
+                            font-weight: var(--semibold-fw);
+                            font-size: 16px;
+                            color: var(--ijo-color);
+                        }
+                        .card-title{
+                            font-weight: var(--semibold-fw);
+                            font-size: 42px;
+                            color: var(--hitam-color);
+                            text-align: center;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+                        .list-data{
+                            .list-img{
+                                float: left; 
+                                margin-top: 2px; 
+                                margin-right: 8px;
+                            }
+                            p{
+                                font-weight: var(--medium-fw);
+                                font-size: 16px;
+                                color: var(--hitam-color); 
+                            }
+                        }
+                        .btn-primary{
+                            margin-top: 18px;
+                            width: 260px;
+                            background-color: var(--main-color);
+                            font-weight: var(--medium-fw);
+                            font-size: 16px;
+                            color: white;
+                            border-color: var(--main-color);
+                            border-radius: 47px;
+                        }
+                        .btn-secondary{
+                            margin-top: 18px;
+                            width: 260px;
+                            background-color: var(--bg-color-secondary);
+                            font-weight: var(--medium-fw);
+                            font-size: 16px;
+                            color: var(--main-color);
+                            border-color: var(--border-color);
+                            border-radius: 47px;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 912px) {
+                .kartu{
+                    margin-top: 40px;
+                }
+            }
+
         }
     }
 }
 // End Investment
+
+
+// Support 2
+.support2{
+    margin-top: 270px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 912px) {
+    .support2{
+        display: none;
+    }
+}
+// End Support 2
+
+
+// Footer
+.footer-section{
+    background-color: var(--bg-color-footer);
+
+    .header-footer{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        span{
+            font-weight: var(--semibold-fw);
+            font-size: 16px;
+            color: var(--ijo-color);
+        }
+        h3{
+            margin-top: 8px;
+            font-weight: var(--semibold-fw);
+            font-size: 30px;
+            color: var(--hitam-color);
+        }
+    }
+
+    .students{
+        .row{
+            .kartu{
+                .card{
+                    border-radius: 13px;
+                    .card-body{
+                        margin: 20px;
+
+                        .card-text{
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+
+                        .user-students{
+                            .user-img{
+                                float: left;
+                                width: 56px;
+                                height: 56px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End Footer

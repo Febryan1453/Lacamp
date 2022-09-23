@@ -11,6 +11,7 @@
   --regular-fw: 400;
   --medium-fw: 500;
   --bg-color-secondary: #F5EFFF;
+  --bg-color-footer: #F7F7FB;
   --border-color: #ECE3FE;
 }
 
@@ -193,6 +194,7 @@
   background-color: #4D1DAB;
   padding-bottom: 70px;
   padding-top: 70px;
+  height: 540px;
 }
 .investment .container .row .invest-content .desc-content span {
   font-weight: var(--semibold-fw);
@@ -220,4 +222,112 @@
   border-radius: 50px;
   font-weight: var(--medium-fw);
   font-size: 16px;
+}
+.investment .container .row .kartu {
+  display: flex;
+  justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.investment .container .row .kartu .card {
+  border-radius: 40px;
+}
+.investment .container .row .kartu .card .card-body {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.investment .container .row .kartu .card .card-body span {
+  font-weight: var(--semibold-fw);
+  font-size: 16px;
+  color: var(--ijo-color);
+}
+.investment .container .row .kartu .card .card-body .card-title {
+  font-weight: var(--semibold-fw);
+  font-size: 42px;
+  color: var(--hitam-color);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.investment .container .row .kartu .card .card-body .list-data .list-img {
+  float: left;
+  margin-top: 2px;
+  margin-right: 8px;
+}
+.investment .container .row .kartu .card .card-body .list-data p {
+  font-weight: var(--medium-fw);
+  font-size: 16px;
+  color: var(--hitam-color);
+}
+.investment .container .row .kartu .card .card-body .btn-primary {
+  margin-top: 18px;
+  width: 260px;
+  background-color: var(--main-color);
+  font-weight: var(--medium-fw);
+  font-size: 16px;
+  color: white;
+  border-color: var(--main-color);
+  border-radius: 47px;
+}
+.investment .container .row .kartu .card .card-body .btn-secondary {
+  margin-top: 18px;
+  width: 260px;
+  background-color: var(--bg-color-secondary);
+  font-weight: var(--medium-fw);
+  font-size: 16px;
+  color: var(--main-color);
+  border-color: var(--border-color);
+  border-radius: 47px;
+}
+@media (max-width: 912px) {
+  .investment .container .row .kartu {
+    margin-top: 40px;
+  }
+}
+
+.support2 {
+  margin-top: 270px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 912px) {
+  .support2 {
+    display: none;
+  }
+}
+.footer-section {
+  background-color: var(--bg-color-footer);
+}
+.footer-section .header-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.footer-section .header-footer span {
+  font-weight: var(--semibold-fw);
+  font-size: 16px;
+  color: var(--ijo-color);
+}
+.footer-section .header-footer h3 {
+  margin-top: 8px;
+  font-weight: var(--semibold-fw);
+  font-size: 30px;
+  color: var(--hitam-color);
+}
+.footer-section .students .row .kartu .card {
+  border-radius: 13px;
+}
+.footer-section .students .row .kartu .card .card-body {
+  margin: 20px;
+}
+.footer-section .students .row .kartu .card .card-body .card-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-section .students .row .kartu .card .card-body .user-students .user-img {
+  float: left;
+  width: 56px;
+  height: 56px;
 }/*# sourceMappingURL=style.css.map */
