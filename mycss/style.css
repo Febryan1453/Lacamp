@@ -300,6 +300,7 @@
 }
 .footer-section {
   background-color: var(--bg-color-footer);
+  padding-bottom: 70px;
 }
 .footer-section .header-footer {
   padding-top: 70px;
@@ -318,16 +319,48 @@
 }
 .footer-section .students .row .kartu .card {
   border-radius: 13px;
+  height: 294px;
+  border: none;
 }
 .footer-section .students .row .kartu .card .card-body {
-  margin: 20px;
+  margin: 10px;
 }
 .footer-section .students .row .kartu .card .card-body .card-text {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .footer-section .students .row .kartu .card .card-body .user-students .user-img {
+  margin-right: 16px;
   float: left;
   width: 56px;
   height: 56px;
+}
+.footer-section .students .row .kartu .card .card-body .user-students .nama span {
+  font-weight: var(--medium-fw);
+  font-size: 18px;
+  color: var(--hitam-color);
+}
+.footer-section .students .row .kartu .card .card-body .user-students .nama .profesi {
+  font-weight: var(--regular-fw);
+  font-size: 16px;
+  color: var(--hitam-desc-color);
+}
+@media (max-width: 912px) {
+  .footer-section .students .row .kartu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center !important;
+  }
+}
+.footer-section .copy {
+  margin-top: 70px;
+  color: #6F6A86;
+  font-weight: var(--regular-fw);
+  font-size: 16px;
+}
+
+@media (max-width: 912px) {
+  .footer-section {
+    margin-top: 1000px;
+  }
 }/*# sourceMappingURL=style.css.map */

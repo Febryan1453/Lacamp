@@ -415,7 +415,7 @@
 // Footer
 .footer-section{
     background-color: var(--bg-color-footer);
-
+    padding-bottom: 70px;
     .header-footer{
         padding-top: 70px;
         padding-bottom: 70px;
@@ -437,8 +437,10 @@
             .kartu{
                 .card{
                     border-radius: 13px;
+                    height: 294px;
+                    border: none;
                     .card-body{
-                        margin: 20px;
+                        margin: 10px;
 
                         .card-text{
                             margin-top: 20px;
@@ -447,15 +449,46 @@
 
                         .user-students{
                             .user-img{
+                                margin-right: 16px;
                                 float: left;
                                 width: 56px;
                                 height: 56px;
+                            }
+                            .nama{
+                                span{
+                                    font-weight: var(--medium-fw);
+                                    font-size: 18px;
+                                    color: var(--hitam-color);
+                                }
+                                .profesi{
+                                    font-weight: var(--regular-fw);
+                                    font-size: 16px;
+                                    color: var(--hitam-desc-color);
+                                }
                             }
                         }
                     }
                 }
             }
+            @media (max-width:912px) {
+                .kartu{
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: center !important;
+                }
+            }
         }
+    }
+    .copy{
+        margin-top: 70px;
+        color: #6F6A86;
+        font-weight: var(--regular-fw);
+        font-size: 16px;
+    }
+}
+@media (max-width:912px) {
+    .footer-section{
+        margin-top: 1000px;
     }
 }
 // End Footer
