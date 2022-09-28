@@ -3,6 +3,7 @@
 }
 
 :root {
+  --bg-login: #4d1cab;
   --main-color: #7839F3;
   --ijo-color: #31B380;
   --hitam-color: #211B3D;
@@ -520,6 +521,7 @@
 
 .dashboard {
   margin-top: 80px;
+  margin-bottom: 200px;
 }
 .dashboard span {
   font-weight: var(--semibold-fw);
@@ -533,9 +535,14 @@
   margin-top: 8px;
   margin-bottom: 30px;
 }
+.dashboard table tr {
+  height: 150px;
+}
 .dashboard table tr .td-img {
-  width: 180px;
-  height: 120px;
+  vertical-align: middle;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .dashboard table tr .td-bootcamp {
   vertical-align: middle;
@@ -551,4 +558,105 @@
   font-size: 16px;
   color: var(--hitam-desc-color);
   margin-bottom: 0px;
+}
+.dashboard table tr .td-price, .dashboard table tr .td-status {
+  vertical-align: middle;
+  text-align: center;
+  font-weight: var(--medium-fw);
+  font-size: 20px;
+  color: var(--hitam-color);
+}
+.dashboard table tr .td-invoice {
+  vertical-align: middle;
+  text-align: center;
+}
+.dashboard table tr .td-invoice .btn-primary {
+  font-weight: var(--medium-fw);
+  font-size: 16px;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 160px;
+  height: 45px;
+  border-radius: 47px;
+}
+
+.body-auth {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+.body-auth .content .content-left {
+  background-color: var(--bg-login);
+}
+.body-auth .content .content-right .authentication {
+  width: 450px;
+  padding-top: 113px;
+  margin-left: 100px;
+}
+.body-auth .content .content-right .authentication .start {
+  margin-top: 30px;
+  font-weight: var(--semibold-fw);
+  font-size: 24px;
+  color: var(--hitam-color);
+}
+.body-auth .content .content-right .authentication .desc-start {
+  margin-top: 6px;
+  font-weight: var(--regular-fw);
+  font-size: 16px;
+  color: var(--hitam-desc-color);
+}
+.body-auth .content .content-right .authentication form {
+  margin-top: 30px;
+}
+.body-auth .content .content-right .authentication form .inputan .form-label {
+  font-weight: var(--regular-fw);
+  font-size: 16px;
+  color: var(--hitam-desc-color);
+}
+.body-auth .content .content-right .authentication form .inputan input {
+  border-radius: 47px;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: var(--medium-fw);
+  color: var(--hitam-color);
+  font-size: 16px;
+  border-color: #E7E5F4;
+}
+.body-auth .content .content-right .authentication form .inputan .error {
+  color: red;
+  margin-top: 8px;
+}
+.body-auth .content .content-right .authentication form .btn-primary {
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: var(--medium-fw);
+  border: none;
+  width: 450px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 47px;
+}
+@media (max-width: 932px) {
+  .body-auth .content .content-left {
+    display: none !important;
+  }
+  .body-auth .content .content-right {
+    display: flex;
+    justify-content: center;
+  }
+  .body-auth .content .content-right .authentication {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80%;
+  }
+  .body-auth .content .content-right .authentication form .btn-primary {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

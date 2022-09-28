@@ -3,6 +3,7 @@
 }
 
 :root{
+    --bg-login: #4d1cab;
     --main-color: #7839F3;
     --ijo-color: #31B380;
     --hitam-color: #211B3D;
@@ -679,6 +680,7 @@
 // Dashboard
 .dashboard{
     margin-top: 80px;
+    margin-bottom: 200px;
     span{
         font-weight: var(--semibold-fw);
         font-size: 16px;
@@ -692,10 +694,15 @@
         margin-bottom: 30px;
     }
     table{
+        
         tr{
+            height: 150px;
             .td-img{
-                width: 180px;
-                height: 120px;
+                vertical-align: middle;
+                width: fit-content;
+                // text-align: center;
+                // width: 180px;
+                // height: 120px;
             }
             .td-bootcamp{
                 vertical-align: middle;
@@ -714,7 +721,123 @@
                     }
                 }
             }
+
+            .td-price, .td-status{
+                vertical-align: middle;
+                text-align: center;
+                font-weight: var(--medium-fw);
+                font-size: 20px;
+                color: var(--hitam-color);
+            }
+
+            .td-invoice{
+                vertical-align: middle;
+                text-align: center;
+                .btn-primary{
+                    font-weight: var(--medium-fw);
+                    font-size: 16px;
+                    color: white;
+                    background-color: var(--main-color);
+                    border: none;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    width: 160px;
+                    height: 45px;
+                    border-radius: 47px;
+                }
+            }
+
         }
     }
 }
 // End Dashboard
+
+
+// Auth (Login)
+.body-auth{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    .content{
+        .content-left{
+            background-color: var(--bg-login);
+        }        
+        .content-right{
+            .authentication{
+                width: 450px;
+                padding-top: 113px;
+                margin-left: 100px;
+                .start{
+                    margin-top: 30px;
+                    font-weight: var(--semibold-fw);
+                    font-size: 24px;
+                    color: var(--hitam-color);
+                }
+                .desc-start{
+                    margin-top: 6px;
+                    font-weight: var(--regular-fw);
+                    font-size: 16px;
+                    color: var(--hitam-desc-color);
+                }
+                form{                    
+                    margin-top: 30px;
+                    .inputan{
+                        .form-label{
+                            font-weight: var(--regular-fw);
+                            font-size: 16px;
+                            color: var(--hitam-desc-color);
+                        }
+                        input{
+                            // width: 450px;
+                            border-radius: 47px;                        
+                            height: 45px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            padding-bottom: 10px;
+                            padding-top: 10px;
+                            font-weight: var(--medium-fw);
+                            color: var(--hitam-color);
+                            font-size: 16px;  
+                            border-color: #E7E5F4;
+                        }   
+                        .error{
+                            color: red;
+                            margin-top: 8px;
+                        }                     
+                    }
+                    .btn-primary{
+                        background-color: var(--main-color);
+                        font-size: 16px;
+                        font-weight: var(--medium-fw);
+                        border: none;
+                        width: 450px;
+                        margin-top: 30px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        border-radius: 47px;
+                    }
+                }
+            }
+        }
+        @media (max-width:932px) {
+            .content-left{
+                display: none !important;
+            }
+            .content-right{
+                display: flex;
+                justify-content: center;
+                .authentication{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    width: 80%;
+                    form{
+                        .btn-primary{
+                            width: 100%;
+                        }
+                    }
+                }                
+            }
+        }
+    }
+}
+// End Auth (Login)
