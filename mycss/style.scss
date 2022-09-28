@@ -492,3 +492,229 @@
     }
 }
 // End Footer
+
+
+// Checkout Bootcamp
+.checkout-bootcamp{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    text-align: center;
+
+    span{
+        font-weight: var(--semibold-fw);
+        color: var(--ijo-color);
+        font-size: 16px;
+    }
+
+    h2{
+        margin-top: 8px;
+        font-weight: var(--semibold-fw);
+        color: var(--hitam-color);
+        font-size: 40px;
+    }
+
+}
+// End Checkout Bootcamp
+
+
+// Detail Checkout
+.detail-checkout{
+    padding-bottom: 102px;
+    .row{
+        .left-content{
+            // padding-left: 150px;
+            display: flex;
+            justify-content: center;
+            .video{
+                margin-bottom: 30px;
+            }
+            .desc{
+                span{
+                    font-weight: var(--semibold-fw);
+                    color: var(--ijo-color);
+                    font-size: 22px;                    
+                }
+                p{
+                    padding-right: 50px;
+                    text-align: justify;
+                    margin-top: 10px;
+                    font-weight: var(--regular-fw);
+                    color: var(--hitam-color);
+                    font-size: 16px;   
+                }
+            }
+        }
+        .right-content{
+            display: flex;
+            justify-content: center;
+            form{
+                .inputan{
+                    margin-bottom: 30px !important;
+                    .form-label{
+                        font-weight: var(--regular-fw);
+                        color: var(--hitam-color);
+                        font-size: 16px;   
+                        margin-bottom: 8px;
+                    }
+                    input{
+                        border-radius: 47px;
+                        width: 370px;
+                        height: 45px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                        font-weight: var(--medium-fw);
+                        color: var(--hitam-color);
+                        font-size: 16px;  
+                        border-color: #E7E5F4;
+                    }
+                }
+                .row{
+                    .inputan-2{
+                        .form-label{
+                            font-weight: var(--regular-fw);
+                            color: var(--hitam-color);
+                            font-size: 16px;   
+                            margin-bottom: 8px;
+                        }
+
+                        input{
+                            border-radius: 47px;
+                            width: 170px;
+                            height: 45px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            padding-bottom: 10px;
+                            padding-top: 10px;
+                            font-weight: var(--medium-fw);
+                            color: var(--hitam-color);
+                            font-size: 16px;  
+                            border-color: #E7E5F4;
+                        }  
+
+                        .jarak{
+                            margin-left: 80px;
+                        }
+
+                        @media (max-width: 912px) {
+                            .jarak{
+                                margin-left: 0px;
+                            } 
+                            input{
+                                width: 370px;
+                            }
+                        }                   
+                    }                    
+                }
+                .btn-primary{
+                    background-color: var(--main-color);
+                    font-size: 16px;
+                    font-weight: var(--medium-fw);
+                    border: none;
+                    width: 370px;
+                    margin-top: 30px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-radius: 47px;
+                }
+                .pay{
+                    width: 370px;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+        }
+
+        @media (max-width: 912px) {
+            .right-content{
+                margin-top: -50px;
+                padding-left: 55px;
+            } 
+        } 
+
+    }
+}
+// End Detail Checkout
+
+
+// Success
+.success{
+    margin-top: 106px;
+}
+
+.back{
+    margin-top: 106px;
+    text-align: center;
+    margin-bottom: 172px;
+    span{
+        font-weight: var(--semibold-fw);
+        font-size: 16px;
+        color: var(--ijo-color);
+    }
+    h2{
+        font-weight: var(--semibold-fw);
+        font-size: 30px;
+        color: var(--hitam-color);
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+    .btn-dashoard{
+        background-color: var(--main-color);
+        width: 228px;
+        color: white;
+        border-radius: 47px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        &:hover{
+            background-color: var(--main-color);
+            color: white;
+        }
+    }
+}
+// End Success
+
+
+// Dashboard
+.dashboard{
+    margin-top: 80px;
+    span{
+        font-weight: var(--semibold-fw);
+        font-size: 16px;
+        color: var(--ijo-color);
+    }
+    h2{
+        font-weight: var(--semibold-fw);
+        font-size: 30px;
+        color: var(--hitam-color);
+        margin-top: 8px;
+        margin-bottom: 30px;
+    }
+    table{
+        tr{
+            .td-img{
+                width: 180px;
+                height: 120px;
+            }
+            .td-bootcamp{
+                vertical-align: middle;
+                .desc{
+                    .name{
+                        font-weight: var(--medium-fw);
+                        font-size: 20px;
+                        color: var(--hitam-color);
+                        margin-bottom: 0px;
+                    }
+                    .date{
+                        font-weight: var(--regular-fw);
+                        font-size: 16px;
+                        color: var(--hitam-desc-color);
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Dashboard

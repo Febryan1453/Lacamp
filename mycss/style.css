@@ -363,4 +363,192 @@
   .footer-section {
     margin-top: 1000px;
   }
+}
+.checkout-bootcamp {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.checkout-bootcamp span {
+  font-weight: var(--semibold-fw);
+  color: var(--ijo-color);
+  font-size: 16px;
+}
+.checkout-bootcamp h2 {
+  margin-top: 8px;
+  font-weight: var(--semibold-fw);
+  color: var(--hitam-color);
+  font-size: 40px;
+}
+
+.detail-checkout {
+  padding-bottom: 102px;
+}
+.detail-checkout .row .left-content {
+  display: flex;
+  justify-content: center;
+}
+.detail-checkout .row .left-content .video {
+  margin-bottom: 30px;
+}
+.detail-checkout .row .left-content .desc span {
+  font-weight: var(--semibold-fw);
+  color: var(--ijo-color);
+  font-size: 22px;
+}
+.detail-checkout .row .left-content .desc p {
+  padding-right: 50px;
+  text-align: justify;
+  margin-top: 10px;
+  font-weight: var(--regular-fw);
+  color: var(--hitam-color);
+  font-size: 16px;
+}
+.detail-checkout .row .right-content {
+  display: flex;
+  justify-content: center;
+}
+.detail-checkout .row .right-content form .inputan {
+  margin-bottom: 30px !important;
+}
+.detail-checkout .row .right-content form .inputan .form-label {
+  font-weight: var(--regular-fw);
+  color: var(--hitam-color);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.detail-checkout .row .right-content form .inputan input {
+  border-radius: 47px;
+  width: 370px;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: var(--medium-fw);
+  color: var(--hitam-color);
+  font-size: 16px;
+  border-color: #E7E5F4;
+}
+.detail-checkout .row .right-content form .row .inputan-2 .form-label {
+  font-weight: var(--regular-fw);
+  color: var(--hitam-color);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.detail-checkout .row .right-content form .row .inputan-2 input {
+  border-radius: 47px;
+  width: 170px;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: var(--medium-fw);
+  color: var(--hitam-color);
+  font-size: 16px;
+  border-color: #E7E5F4;
+}
+.detail-checkout .row .right-content form .row .inputan-2 .jarak {
+  margin-left: 80px;
+}
+@media (max-width: 912px) {
+  .detail-checkout .row .right-content form .row .inputan-2 .jarak {
+    margin-left: 0px;
+  }
+  .detail-checkout .row .right-content form .row .inputan-2 input {
+    width: 370px;
+  }
+}
+.detail-checkout .row .right-content form .btn-primary {
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: var(--medium-fw);
+  border: none;
+  width: 370px;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 47px;
+}
+.detail-checkout .row .right-content form .pay {
+  width: 370px;
+  margin-top: 20px;
+  text-align: center;
+}
+@media (max-width: 912px) {
+  .detail-checkout .row .right-content {
+    margin-top: -50px;
+    padding-left: 55px;
+  }
+}
+
+.success {
+  margin-top: 106px;
+}
+
+.back {
+  margin-top: 106px;
+  text-align: center;
+  margin-bottom: 172px;
+}
+.back span {
+  font-weight: var(--semibold-fw);
+  font-size: 16px;
+  color: var(--ijo-color);
+}
+.back h2 {
+  font-weight: var(--semibold-fw);
+  font-size: 30px;
+  color: var(--hitam-color);
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.back .btn-dashoard {
+  background-color: var(--main-color);
+  width: 228px;
+  color: white;
+  border-radius: 47px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+}
+.back .btn-dashoard:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.dashboard {
+  margin-top: 80px;
+}
+.dashboard span {
+  font-weight: var(--semibold-fw);
+  font-size: 16px;
+  color: var(--ijo-color);
+}
+.dashboard h2 {
+  font-weight: var(--semibold-fw);
+  font-size: 30px;
+  color: var(--hitam-color);
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.dashboard table tr .td-img {
+  width: 180px;
+  height: 120px;
+}
+.dashboard table tr .td-bootcamp {
+  vertical-align: middle;
+}
+.dashboard table tr .td-bootcamp .desc .name {
+  font-weight: var(--medium-fw);
+  font-size: 20px;
+  color: var(--hitam-color);
+  margin-bottom: 0px;
+}
+.dashboard table tr .td-bootcamp .desc .date {
+  font-weight: var(--regular-fw);
+  font-size: 16px;
+  color: var(--hitam-desc-color);
+  margin-bottom: 0px;
 }/*# sourceMappingURL=style.css.map */
